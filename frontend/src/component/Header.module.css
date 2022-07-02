@@ -1,0 +1,142 @@
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    background-color: #000;
+    position: relative;
+}
+
+.headerImage{
+    width: 100%;
+    height: 660px;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+.headerTitleContainer{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+}
+
+.headerTitle {
+font-size: 50px;
+font-weight: 400;
+color: white;
+margin: 10px 0px;
+}
+
+.headerSubTitle {
+color: white;
+font-size: 30px;
+margin: 10px 0px;
+}
+
+.headerSearchContainer {
+    display: flex;
+    width: 70%;
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.headerSearchInput {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border: solid 0.5px white;
+    border-right: none;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.headerSearchInput:focus {
+    outline: none;
+}
+
+.headerSearchButton {
+    background-color: rgb(221, 221, 221);
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    width: 20%;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerSearchButton:hover{
+    background-color: gray;
+}
+
+.headerSearchIcon {
+    color: black;
+    font-size: 19px;
+}
+
+.headerSearchFilter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.headerFilterTitle{
+margin-right: 15px;
+}
+
+.headerFilterOptionContainer{
+margin: 8px;
+}
+
+.headerFilterOption{
+transform: scale(1.4);
+color: white;
+margin: 0px 10px;
+}
+
+
+/* Css for phone screen 412px or less */
+
+@media only screen and (max-width: 412px) {
+    .headerImage{
+        width: 100%;
+        height: 560px;
+    }
+    
+    .headerTitle {
+    font-size: 35px;
+    }
+    
+    .headerSubTitle {
+    font-size: 18px;
+    }
+    
+    .headerSearchContainer {
+        height: 40px;
+        margin-top: 50px;
+        margin-bottom: 12px;
+    }
+
+    .headerSearchIcon {
+        font-size: 16px;
+    }
+
+
+.headerSearchFilter{
+    flex-direction: column;
+    align-items:flex-start;
+    font-size: 18px;
+}
+  }

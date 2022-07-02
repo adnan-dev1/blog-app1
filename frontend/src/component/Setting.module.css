@@ -1,0 +1,153 @@
+.settingContainer{
+    padding-top: 30px;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+.settingTitleContainer{
+display: flex;
+width: 70vw;
+margin: 20px;
+justify-content: space-between;
+align-items: center;
+}
+
+.settingUpdateTitle{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(0, 0, 129);
+}
+
+.settingDeleteAccount{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.settingForm{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.settingFormGroupImage{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+
+.settingProfileImg{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+margin-right: 20px;
+}
+
+.settingFormFile{
+    font-size: 30px;
+    cursor: pointer;
+    color: darkblue;
+}
+
+.settingFormFileInput{
+    display: none;
+}
+
+.settingFormGroupInput{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px;
+}
+
+.settingFormLabelText{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 0, 139);
+    margin: 15px 0px;
+}
+
+.settingFormInput{
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 18px;
+    border: solid 3px rgb(0, 0, 139);
+}
+
+.settingFormSubmit{
+    width: 20%;
+    font-weight: 600;
+    border-radius: 15px;
+    margin: 25px 20px;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(0, 0, 139);
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.settingFormSubmit:hover{
+    transform: scale(1.1);
+    background-color: rgb(0, 0, 90);
+}
+
+
+/* Css for phone screen 412px or less */
+
+@media only screen and (max-width: 412px) {
+    .settingContainer{
+        padding-top: 5px;
+    }
+    
+    .settingTitleContainer{
+    width: 90vw;
+    margin: 10px;
+    }
+    
+    .settingUpdateTitle{
+        font-size: 22px;
+    }
+    
+    .settingDeleteAccount{
+        font-size: 10px;
+    }
+    
+    .settingFormGroupImage{
+        margin: 15px;
+    }
+    
+    .settingProfileImg{
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    }
+    
+    .settingFormFile{
+        font-size: 25px;
+    }
+    
+    .settingFormGroupInput{
+        width: 75%;
+        margin: 15px;
+    }
+    
+    .settingFormLabelText{
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+    
+    .settingFormInput{
+        font-size: 15px;
+    }
+    
+    .settingFormSubmit{
+        width: 50%;
+        margin: 0px 0px 20px 0px;
+        padding: 5px;
+        font-size: 22px;
+    }
+  }

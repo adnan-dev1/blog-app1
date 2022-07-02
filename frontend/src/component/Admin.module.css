@@ -1,0 +1,164 @@
+.adminContainer {
+  padding-top: 25px;
+  width: 100%;
+  font-family: "Fira Sans Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.adminCatContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createCatContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: 20px;
+}
+
+.catTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(0, 0, 129);
+}
+
+.createCatForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.createCatFormInput {
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 18px;
+  width: 100%;
+  border: solid 3px rgb(0, 0, 139);
+}
+
+.createCatFormSubmit {
+  width: 40%;
+  align-self: center;
+  font-weight: 600;
+  border-radius: 15px;
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(0, 0, 139);
+  border: none;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.createCatFormSubmit:hover {
+  transform: scale(1.1);
+  background-color: rgb(0, 0, 90);
+}
+
+.deleteCatContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.catDeleteIcon {
+  color: tomato;
+  cursor: pointer;
+  font-size: 18px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.lined {
+  display: flex;
+  flex-direction: row;
+}
+
+.lined:before,
+.lined:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid rgb(0, 0, 129);
+  margin: auto;
+}
+.lined:before {
+  margin-right: 10px;
+}
+.lined:after {
+  margin-left: 10px;
+}
+
+.adminTableDataContainer{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.noData{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 139);
+}
+
+
+/* Css for phone screen 412px or less */
+
+@media only screen and (max-width: 412px) {  
+  .adminCatContainer {
+    flex-direction: column;
+  }
+  
+  .createCatContainer {
+    flex-direction: column;
+    margin: 30px;
+  }
+  
+  .catTitle {
+    font-size: 18px;
+  }
+  
+  .createCatForm {
+    width: 80%;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .createCatFormInput {
+    font-size: 12px;
+    border: solid 2px rgb(0, 0, 139);
+  }
+  
+  .createCatFormSubmit {
+    width: 70%;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  .deleteCatContainer {
+    width: 100%;
+  }
+  
+  .lined {
+    font-size: 22px;
+  }
+  
+  .noData{
+    font-size: 1rem;
+  }
+}

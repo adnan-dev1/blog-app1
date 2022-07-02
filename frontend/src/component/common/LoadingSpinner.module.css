@@ -1,0 +1,45 @@
+.loadingSpin{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    align-self: center;
+    border: 10px solid #ffffff;
+    border-top: 10px solid rgb(0, 0, 139);
+    border-radius: 50%;
+    animation-name: SpinnerAnimation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.loadSpinner{
+    position: absolute;
+    top: 5px;
+    right: 110px;
+}
+
+@keyframes SpinnerAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Css for phone screen 412px or less */
+
+@media only screen and (max-width: 412px) {
+    .loadingSpin{
+        width: 25px;
+        height: 25px;
+        border: 7px solid #ffffff;
+        border-top: 7px solid rgb(0, 0, 139);
+    }
+
+    .loadSpinner{
+        top: 7px;
+        right: 30px;
+    }
+  }

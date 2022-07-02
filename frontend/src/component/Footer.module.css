@@ -1,0 +1,107 @@
+.footerContainer {
+  font-family: "Fira Sans Condensed", sans-serif;
+  display: flex;
+  background-color: rgba(196, 192, 192, 0.4);
+  color: black;
+  padding: 20px;
+}
+
+.footerLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.footerTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footerDesc {
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+.footerCenter {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerHeadLine {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.footerList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerListItems {
+  width: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footerRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.footerSocialContainer{
+    display: flex;
+}
+
+.footerSocialIcon{
+    width: 40px;
+    font-size: 25px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Css for phone screen 412px or less */
+
+@media only screen and (max-width: 412px) {
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  .footerTitle {
+    font-size: 20px;
+  }
+  
+  .footerDesc {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .footerHeadLine {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  
+  .footerSocialIcon{
+    width: 22px;
+    font-size: 15px;
+    height: 22px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+}
+}

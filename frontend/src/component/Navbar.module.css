@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  font-family: "Fira Sans Condensed", sans-serif;
+  z-index: 999;
+}
+
+.navLeft,
+.navRight {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+}
+
+.logo {
+  font-size: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: darkblue;
+}
+
+.navCenter {
+  flex: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navListItems {
+  font-size: 1.3rem;
+  margin-right: 10px;
+  color: darkblue;
+  cursor: pointer;
+  transition: all 0.8 ease;
+}
+
+.navListItems:hover {
+  font-weight: bold;
+}
+
+.profileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Css for phone screen 412px or less */
+
+@media only screen and (max-width: 412px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .profileImg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .navCenter .navList {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    top: 3.1rem;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(0, 0, 139);
+    transition: all 0.8s ease;
+  }
+
+  .link{
+    justify-content: center;
+  }
+
+  .navRight .navList {
+    position: fixed;
+    right: 6rem;
+  }
+
+  input[type="checkbox"]:checked ~ .navCenter .navList {
+    opacity: 1;
+    height: 100%;
+  }
+
+  .navCenter .navListItems {
+    color: white;
+    font-size: 1rem;
+    margin: 0.8rem 0;
+  }
+
+  .navRight .navListItems {
+    color: rgb(0, 0, 139);
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .hamburger {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 5px;
+    display: block;
+    cursor: pointer;
+  }
+}

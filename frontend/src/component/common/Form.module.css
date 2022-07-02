@@ -1,0 +1,61 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.formInputText{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin: 15px 0px;
+}
+
+.formInput{
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 18px;
+    border: solid 3px rgb(0, 0, 139);
+}
+
+.formSubmit{
+    width: 40%;
+    align-self: center;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(0, 0, 139);
+    border: none;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.formSubmit:hover{
+    transform: scale(1.1);
+    background-color: rgb(0, 0, 90);
+}
+
+/* Css for phone screen 412px or less */
+
+@media only screen and (max-width: 412px) {
+    .form{
+        width: 75%;
+    }
+    
+    .formInputText{
+        font-size: 20px;
+    }
+    
+    .formInput{
+        font-size: 15px;
+    }
+    
+    .formSubmit{
+        width: 50%;
+        font-size: 22px;
+    }
+  }
+  

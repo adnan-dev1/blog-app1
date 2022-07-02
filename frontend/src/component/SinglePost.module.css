@@ -1,0 +1,287 @@
+.writeContainer{
+    padding-top: 50px;
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+
+.writeImg{
+    width: 70vw;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.writeForm{
+    position: relative;
+}
+
+.formGroup{
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.writeFormAddIcon{
+    width: 25px;
+    height: 25px;
+    font-size: 35px;
+    color: rgb(129, 125, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.writeFormInputFile{
+display: none;
+}
+
+.writeFormInputTitle{
+    font-size: 32px;
+    border: none;
+    padding: 20px;
+    width: 30vw;
+}
+
+.writeFormInputTitle:focus{
+    outline: none;
+}
+
+.writeFormTitle{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    width: 65vw;
+}
+
+.writeFormIcons{
+    font-size: 22px;
+}
+
+.writeFormEditIcon{
+    margin-right: 15px;
+    color: green;
+    cursor: pointer;
+}
+
+.writeFormDeleteIcon{
+    color: tomato;
+    cursor: pointer;
+}
+
+.formGroupSubInfo{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.formPostAuthor{
+    font-weight: bold;
+    color: #be9656;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+
+.formPostDate{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(190, 150, 10);
+}
+
+.writeFormTextarea{
+    width: 70vw;
+    font-size: 28px;
+    padding: 20px;
+    border: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.writeFormTextarea:focus{
+    outline: none;
+}
+
+.writeFormDesc{
+    width: 70vw;
+    font-size: 28px;
+    padding: 20px;
+}
+
+.writeFormDesc::first-letter {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+.formCatsGroup{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.catTitle{
+    font-size: 30px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.catsContainer{
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.catContainer {
+    margin: 10px;
+}
+
+.catInput{
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.catLabel{
+font-size: 20px;
+cursor: pointer;
+}
+
+.catText{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 128);
+}
+
+.writeFormSubmit{
+    position: absolute;
+    top: 5px;
+    right: 110px;
+    font-size: 35px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(0, 128, 128);
+    color: white;
+    width: 12vw;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.writeFormSubmit:hover{
+    background-color: rgb(0, 128, 90);
+    transform: scale(1.05);
+}
+
+
+/* Css for phone screen 412px or less */
+
+@media only screen and (max-width: 412px) {
+    .writeContainer{
+        padding-top: 25px;
+    }
+
+    .writeImg{
+        width: 85vw;
+        height: 300px;
+        margin-left: 25px;
+    }
+    
+    .formGroup{
+        margin-left: 25px;
+    }
+    
+    .writeFormAddIcon{
+        width: 15px;
+        height: 15px;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    
+    .writeFormInputTitle{
+        font-size: 25px;
+        padding: 15px;
+        width: 40vw;
+    }
+
+    .writeFormTitle{
+        font-size: 25px;
+        padding: 10px;
+        width: 70vw;
+    }
+    
+    .writeFormIcons{
+        font-size: 15px;
+        display: flex;
+    }
+    
+    .writeFormEditIcon{
+        margin-right: 6px;
+    }
+
+.formGroupSubInfo{
+    width: 85vw;
+    margin-left: 25px;
+}
+
+.formPostAuthor{
+   font-size: 15px;
+}
+
+.formPostDate{
+    font-size: 15px;
+}
+    
+    .writeFormTextarea{
+        width: 80vw;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .writeFormDesc{
+        width: 80vw;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .writeFormDesc::first-letter {
+        font-size: 30px;
+      }
+    
+    .catTitle{
+        font-size: 20px;
+    }
+    
+    .catInput{
+        transform: scale(1.2);
+    }
+    
+    .catLabel{
+    font-size: 15px;
+    }
+    
+    .writeFormSubmit{
+        top: 7px;
+        right: 30px;
+        font-size: 18px;
+        width: 6rem;
+        padding: 5px;
+    }
+
+    .catText{
+        font-size: 15px;
+    }
+  }
