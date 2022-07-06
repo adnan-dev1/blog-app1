@@ -109,7 +109,7 @@ margin: 0px 10px;
 
 /* Css for phone screen 412px or less */
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 450px) {
     .headerImage{
         width: 100%;
         height: 560px;

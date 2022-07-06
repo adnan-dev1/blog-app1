@@ -33,7 +33,7 @@
 
   /* Css for phone screen 412px or less */
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 450px) {
     .paginate{
         font-size: 12px;
     }

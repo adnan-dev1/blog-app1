@@ -98,7 +98,7 @@ margin-right: 20px;
 
 /* Css for phone screen 412px or less */
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 450px) {
     .settingContainer{
         padding-top: 5px;
     }
